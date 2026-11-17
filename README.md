@@ -8,5 +8,5 @@ The console interface supports task creation and display.
 
 Validation, completion, and deletion will be developed on feature branches.
 
-Project status: Planning
+Project status: Development
 
