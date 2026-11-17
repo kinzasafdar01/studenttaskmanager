@@ -27,7 +27,11 @@ class TaskManager:
         raise ValueError("Task ID not found.")
 
     def delete_task(self, task_id):
-        raise ValueError("Delete feature is not implemented yet.")
+        for index, task in enumerate(self.tasks):
+            if task["id"] == task_id:
+                return self.tasks.pop(index)
+
+        raise ValueError("Task ID not found.")
 
     def display_tasks(self):
         if not self.tasks:
